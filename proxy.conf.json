@@ -1,0 +1,14 @@
+{
+  "/oauth": {
+    "target": "https://onura.airmind.com:8180",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  },
+  "/api": {
+    "target": "https://onura.airmind.com:8143",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}

@@ -1,0 +1,9 @@
+<p class="text-center py-2" *ngIf="!authService.isLogin">SIGN IN TO CONTINUE.</p>
+  <form class="form-validate mb-3" *ngIf="!authService.isLogin" (ngSubmit)="login()" #loginForm="ngForm">
+    <div class="form-group">
+      <input class="form-control border-right-0" type="text" name="username" [(ngModel)]="authService.loginUser.username" required placeholder="Username">
+      <input class="form-control border-right-0" type="password" name="password" [(ngModel)]="authService.loginUser.password" required placeholder="Password">
+      <button class="btn btn-block btn-primary mt-3" [disabled]="!loginForm.valid" type="submit">Sign in</button>
+    </div>
+  </form>
+

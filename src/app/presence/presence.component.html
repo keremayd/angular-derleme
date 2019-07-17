@@ -1,0 +1,31 @@
+<table>
+  <tr>
+    <th>Mac Adresi</th>
+    <th>Telefon</th>
+    <th>Görünen Ad</th>
+    <th>Cinsiyet</th>
+    <th>Yaş Aralığı</th>
+    <th>E-posta</th>
+    <th>Abone</th>
+    <th>Giriş Kaynağı</th>
+    <th>Son Bulunduğu Zaman</th>
+    <th>Durum</th>
+  </tr>
+  <tr *ngFor="let guest of guestsModel">
+    <td>{{guest.macAddresses}}</td>
+    <td>{{guest.phone}}</td>
+    <td>{{guest.displayName}}</td>
+    <td>{{guest.gender}}</td>
+    <td>{{guest.ageRange}}</td>
+    <td>{{guest.email}}</td>
+    <td>{{guest.subscribed}}</td>
+    <td>{{guest.loginSource}}</td>
+    <td>{{guest.loginLastTime}}</td>
+    <td>{{guest.status}}</td>
+  </tr>
+</table>
+<div class="content-heading">
+  <div>Data-Tables components
+    <small>Native and not wrapped angular2 based data-tables</small></div>
+</div>
+

@@ -1,0 +1,3 @@
+<button class="btn btn-block btn-primary mt-3" *ngIf="this.authService.isLogin" (click)="this.authService.logout()">Logout</button>
+
+<router-outlet></router-outlet>
